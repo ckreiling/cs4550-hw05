@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="column">
+    <h1>Join a Game</h1>
+    <input id="input" type="text" />
+    <button id="redirect-button">Go to game</button>
+  </div>
+</div>
+
+<script>
+(function() {
+  var redirectButton = document.getElementById("redirect-button");
+  redirectButton.addEventListener("click", redirectToPage)
+
+  var userInput = document.getElementById("input")
+
+  function redirectToPage() {
+    console.log("button pressed here we go")
+    window.location.replace("/game/" + userInput.value)
+  }
+})()
+</script>

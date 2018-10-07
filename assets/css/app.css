@@ -1,0 +1,25 @@
+/* This file is for your main application css. */
+
+@import "~milligram/dist/milligram";
+
+.green-background {
+  background-color: green;
+}
+
+.app-container {
+  text-align: center;
+}
+
+.restart-button {
+  display: block;
+  margin: 10px auto;
+}
+
+.memory-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.memory-card {
+  margin: 5px 10px;
+}
